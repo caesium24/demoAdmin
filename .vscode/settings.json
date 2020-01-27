@@ -2,3 +2,10 @@
     "python.pythonPath": "venv/bin/python3",
     "git.ignoreLimitWarning": true
 }
+"emmet.triggerExpansionOnTab": true,
+"emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "razor": "html",
+    "plaintext": "jade"
+}
