@@ -1,0 +1,471 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    border-bottom: .1px transparent solid;
+    padding-bottom: 0rem;
+    background-color: #151421;
+    border-color: #258afe;
+}
+
+.navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px transparent solid;
+    margin-right: 60px;
+    padding-bottom: 0rem;
+    transition: border-color 0.5s;
+    color: #55546D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    border-color: #258afe;
+}
+
+.nav-bar-link-list {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#logo-id {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7rem;
+    color: #258afe;
+    margin-right: 48%;
+}
+
+.link-menu {
+    padding-right: 35vw;
+    font-size: 1.5rem;
+    margin-left: -2vw;
+    margin-right: 10px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+#link-menu-id {
+    color: #258afe;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    flex-basis: 1;
+    margin-right: 10px;
+}
+
+.section-container {
+    display: flex;
+    left: 0%;
+    top: 0%;
+    width: 8em;
+    margin-top: 0%;
+    color: #7D7D7D;
+    background-color: #1f1e30;
+    width: 100%;
+    height: 100vh;
+}
+
+.section-menu {
+    display: flex;
+    flex-direction: column;
+    left: 0%;
+    top: 0%;
+    margin-top: 0%;
+    background-color: #151421;
+    color: #7D7D7D;
+    width: 10%;
+    height: 100vh;
+}
+
+.menu-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.fa-arrow-alt-circle-left {
+    color: #258afe;
+    font-size: 1.2em;
+    margin-top: 3px;
+    transition: color 0.5s;
+    align-self: flex-end;
+    margin-right: 2%;
+}
+
+.fa-arrow-alt-circle-left:hover {
+    color: #ffffff !important;
+    cursor: pointer;
+}
+
+.fa-arrow-alt-circle-right {
+    color: #258afe;
+    font-size: 1.2em;
+    margin-top: 3px;
+    transition: color 0.5s;
+}
+
+.fa-arrow-alt-circle-right:hover {
+    color: #ffffff !important;
+    cursor: pointer;
+}
+
+#col-button {
+    align-self: flex-end;
+}
+
+.links-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 0px;
+}
+
+.section-links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 10%;
+    padding: 0%;
+}
+
+.section-link-icon {
+    display: inline-flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    color: #258afe;
+}
+
+.section-links-text {
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: #258afe;
+    border-bottom: 3px transparent solid;
+    text-decoration: none;
+}
+
+.section-links-text a {
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: #55546D;
+    border-bottom: 1px transparent solid;
+    transition: border-color 0.5s;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 0%;
+}
+
+.active {
+    border-color: #258afe;
+}
+
+.section-links-text a:hover {
+    border-color: #258afe;
+}
+
+.oob-sites {
+    width: 92%;
+    height: 70vh;
+    margin-left: -7%;
+    background-color: #0b0a1e;
+    border-radius: .3em;
+}
+
+.oob-link-title {
+    color: #258afe;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.05rem;
+    margin-left: 10px;
+}
+
+.oob-links-list {
+    padding: 0px;
+}
+
+.oob-links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    border-bottom: 1px transparent solid;
+    transition: border-color 0.5s;
+    color: #55546D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .8 rem;
+    margin-left: -35px;
+    margin-bottom: 15px;
+}
+
+.oob-links a:hover {
+    border-color: #258afe;
+}
+
+.local-time-div {
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    display: inline-flex;
+}
+
+.time-box {
+    align-items: center;
+    text-align: center;
+    align-self: center;
+}
+
+.local-time-div h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: #55546D;
+    width: 150px;
+    padding: 2px;
+    border-radius: 1px;
+    margin: 30px 33vw 50px 45vw;
+    border: 1px #258afe groove;
+    background-color: #0b0a1e;
+}
+
+.metrics-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 10px;
+    align-self: center;
+    height: 80%;
+    background-color: #0b0a1e;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.metrics-card {
+    text-align: center;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    align-self: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 200px;
+    width: 20%;
+    background-color: #258afe;
+    transition: width .2s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.metrics-head {
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 8%;
+}
+
+.metrics-data {
+    font-size: 4rem;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    margin-top: 0%;
+    margin-bottom: -5%;
+}
+
+.metrics-diff {
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    margin-right: 50%;
+}
+
+#diff1 {
+    color: #ff0000;
+}
+
+#diff2 {
+    color: #00ff2a;
+}
+
+#diff3 {
+    color: #00ff2a;
+}
+
+#diff4 {
+    color: #ff0000;
+}
+
+#diff5 {
+    color: #f5a623;
+}
+
+.data-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.alerts-section {
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: .5%;
+    height: auto;
+    background-color: #1f1e30;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.alert-strip {
+    display: flex;
+    flex-direction: row;
+    background-color: #258afe;
+    height: 40px;
+    width: auto;
+    color: #ffffff;
+    font-size: 15px;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    margin-bottom: -20px;
+    margin-left: -6.5%;
+}
+
+.alert-strip:hover {
+    cursor: pointer;
+}
+
+#alert-error {
+    border: 2px #ff0000 solid
+}
+
+#alert-warning {
+    border: 2px #f5a623 solid
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    height: 100%;
+    background-color: #1f1e30;
+}
+
+.dashboard-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 10px;
+    align-self: center;
+    height: 80%;
+    background-color: #0b0a1e;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.iframe-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    height: 100%;
+    background-color: #272a3d;
+}
+
+.section-head {
+    margin: 1% 1% 1% 1%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: #258afe;
+}
+
+.tickets-section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
+    margin-right: 4%;
+    margin-left: 4.5%;
+    height: 500px;
+    background-color: #272a3d;
+    border: 1px rgb(35, 35, 35) solid;
+}
+
+.section-header-tickets {
+    display: flex;
+    flex-direction: row;
+}
+
+#addTicket {
+    font-size: 2rem;
+    margin-top: 15px;
+    margin-left: 83%;
+    color: #258afe;
+    cursor: pointer;
+}
+
+.ticket-list {
+    display: flex;
+}
+
+.ticket {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -10px;
+    align-self: center;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 20%;
+    background-color: #258afe;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ticket-name {
+    font-size: 15px;
+    color: white;
+}
+
+.ticket-title {
+    font-size: 24px;
+    color: white;
+}
+
+.ticket-admin {
+    font-size: 14px;
+    color: white;
+}
+
+.ticket-date {
+    font-size: 14px;
+    color: white;
+}
+
+.ticket-desc {
+    font-size: 14px;
+    color: white;
+}

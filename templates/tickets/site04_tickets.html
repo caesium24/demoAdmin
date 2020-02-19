@@ -1,0 +1,25 @@
+{% extends 'base.html' %}{% block menulist %}
+<li class="section-links-text"><a id="dash-link" href="{% url 'site04_dash'%}"><i class="section-link-icon fa-li fas fa-chart-line"></i>Dashboards</a></li>
+<li class="section-links-text"><a id="metrics-link" href="{% url 'site04_metrics'%}"><i class="section-link-icon fa-li fas fa-sort-numeric-up-alt"></i>Metrics</a></li>
+<li class="section-links-text"><a id="alerts-link" href="{% url 'site04_alerts' %}"><i class="section-link-icon fa-li far fa-bell"></i>Alerts</a></li>
+<li class="section-links-text"><a id="tickets-link" href="{% url 'site04_tickets' %}"><i class="section-link-icon fa-li far fa-check-square "></i>Tickets</a></li>
+{% endblock menulist %} {% block content %}
+<div class="content-section tickets-page site04 ">
+    <div class="local-time-div">
+        <div class="time-box">
+            <h1 class="time-text" id="local-time"></h1>
+        </div>
+    </div>
+    <div class="metrics-section">
+        <div class="section-header-tickets">
+            <h2 class="section-head"><i class="fas fa-clipboard-list"></i> Trouble Tickets</i>
+            </h2>
+            <a href="#" title="Add New Ticket" id="addTicket"><i class="add-ticket far fa-plus-square"></i></a>
+        </div>
+        <ul class="ticket-list">
+            <li class="ticket">
+                <h1 class="ticket-name">site04 Netscaler no logon</h1>
+            </li>
+        </ul>
+    </div>
+    {% endblock %}

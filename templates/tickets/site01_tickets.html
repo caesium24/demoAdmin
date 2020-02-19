@@ -1,0 +1,34 @@
+{% extends 'base.html' %}{% load static %}{% block menulist %}
+<li class="section-links-text"><a id="dash-link" href="{% url 'index'%}"><i class="section-link-icon fa-li fas fa-chart-line"></i>Dashboards</a></li>
+<li class="section-links-text"><a id="metrics-link" href="{% url 'site01_metrics'%}"><i class="section-link-icon fa-li fas fa-sort-numeric-up-alt"></i>Metrics</a></li>
+<li class="section-links-text"><a id="alerts-link" href="{% url 'site01_alerts' %}"><i class="section-link-icon fa-li far fa-bell"></i>Alerts</a></li>
+<li class="section-links-text"><a id="tickets-link" href="{% url 'site01_tickets' %}"><i class="section-link-icon fa-li far fa-check-square "></i>Tickets</a></li>
+{% endblock menulist %} {% block content %}
+<div class="content-section tickets-page site01 ">
+    <div class="local-time-div">
+        <div class="time-box">
+            <h1 class="time-text" id="local-time"></h1>
+        </div>
+    </div>
+    <div class="metrics-section">
+        <div class="section-header-tickets">
+            <h2 class="section-head"><i class="fas fa-clipboard-list"></i> Trouble Tickets</i>
+            </h2>
+        </div>
+        <ul class="ticket-list">
+            {% if tickets %} {% for ticket in tickets %} {% if ticket.site == 'site01' %}
+            <li class="ticket view-ticket tickets-trigger id=" trigger-view ">
+                <h1 class="ticket-title " >{{ ticket.title }}</h1>
+                <h1 class="ticket-admin " style="display: none; ">Assigned To:{{ ticket.name }}</h1>
+                <h1 class="ticket-date " style="display: none; ">{{ ticket.date }}</h1>
+                <p class="ticket-desc " style="display: none; ">{{ ticket.description }}</p>
+            </li>
+
+            {% endif %} {% endfor %} {% else %}
+            <h1>So much empty</h1>
+            {% endif %}
+        </ul>
+    </div>
+</div>
+{% block ticketscript %}<script type="text/javascript " src="{% static 'js/ticket.js' %} "></script>{% endblock %}
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}{% block menulist %}
+<li class="section-links-text"><a id="dash-link" href="{% url 'site02_dash'%}"><i class="section-link-icon fa-li fas fa-chart-line"></i>Dashboards</a></li>
+<li class="section-links-text"><a id="metrics-link" href="{% url 'site02_metrics'%}"><i class="section-link-icon fa-li fas fa-sort-numeric-up-alt"></i>Metrics</a></li>
+<li class="section-links-text"><a id="alerts-link" href="{% url 'site02_alerts' %}"><i class="section-link-icon fa-li far fa-bell"></i>Alerts</a></li>
+<li class="section-links-text"><a id="tickets-link" href="{% url 'site02_tickets' %}"><i class="section-link-icon fa-li far fa-check-square "></i>Tickets</a></li>
+{% endblock menulist %} {% block content %}
+<div class="content-section metrics-page site02">
+    <div class="local-time-div">
+        <div class="time-box">
+            <h1 class="time-text" id="local-time"></h1>
+        </div>
+    </div>
+    <div class="metrics-section">
+        <div class="metrics-card">
+        </div>
+        <div class="metrics-card">
+        </div>
+        <div class="metrics-card">
+        </div>
+        <div class="metrics-card">
+        </div>
+        <div class="metrics-card">
+        </div>
+        <div class="metrics-card">
+        </div>
+        <div class="metrics-card">
+        </div>
+        <div class="metrics-card">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
