@@ -32,6 +32,10 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'pages.apps.PagesConfig',
+    'metrics.apps.MetricsConfig',
+    'alerts.apps.AlertsConfig',
+    'tickets.apps.TicketsConfig',
+    'splunkalerts.apps.SplunkalertsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,8 +80,11 @@ WSGI_APPLICATION = 'demoADMIN.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'demoAdmin',
+        'USER': 'eshton',
+        'PASSWORD': 'ESHton24!!',
+        'HOST': '172.17.0.2'
     }
 }
 
